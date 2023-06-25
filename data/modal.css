@@ -1,0 +1,194 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial;
+  background-image: url(pictures/background.png);
+  object-fit: cover;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+
+
+.overlay {
+      background:rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+.popup {
+      z-index: 100;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 455px;
+      background-color: whitesmoke;
+      padding: 20px;
+      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .15);
+      border-radius: 10px;
+    }
+
+.popup:active{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 20ms ease-in-out 20ms
+
+}
+
+.popup .close-btn {
+      position:absolute;
+      top:22px;
+      right:22px;
+      width:15px;
+      height:15px;
+      text-align:center;
+      line-height:15px;
+      cursor:pointer;
+      font-size:30px;
+      font-weight:bold;
+      color:gray;
+    }
+
+.form{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border--bottom-color: black
+  margin-bottom: 20px;
+}
+
+.form p{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 8px;
+  line-height: 17px;
+}
+
+.form-element{
+  margin-top: 7px;
+}
+
+.form-element #first-name,
+.form-element #last-name{
+  width: 49%;
+  height: 40px;
+  display: inline;
+  margin-bottom: 1px ;
+}
+
+.form-element #email,
+.form-element #password{
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+.form-element select{
+  margin: 17px 5px 5px 0;
+}
+
+.form-element input{
+  margin: 8px 0;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+
+label{
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  gap: 20px;
+  transform: translate(-2px, 1px);
+
+}
+
+.year{
+  height: 30px;
+  width: 38%;
+  font-size: 13px;
+  font-family: arial;
+  padding-left: 4px;
+  border-radius: 7px;
+}
+
+.course{
+  height: 30px;
+  width: 38%;
+  font-size: 13px;
+  font-family: arial;
+  padding-left: 4px;
+  border-radius: 7px;
+}
+
+.navigation-message{
+  font-size: 9px;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 12px;
+
+}
+
+.learn-more{
+  color: rgba(0, 0, 200, 0.7);
+  cursor: pointer;
+}
+
+input{
+ padding-left: 7px; 
+ font-family: Arial;
+ font-size: 12px;
+}
+
+.sign-up{
+  width: 147px;
+  height: 34px;
+  color: white;
+  background-color: rgb(54, 164, 32);
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 7px;
+  border: none;
+  padding: 2px 8px;
+  font-family: arial;
+  transform: translate(34px, 22px);
+
+}
+
+.sign-up:hover{
+   background-attachment: scroll;
+   background-clip: border-box;
+   background-color: rgba(0, 0, 0, 0);
+   background-image: linear-gradient(rgb(121, 188, 100), rgb(87, 136, 67))
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.sign-up {
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.sign-up:hover {
+ opacity: 1;
+}
+
+.popup a{
+  text-decoration: none;
+  color: inherit;
+}

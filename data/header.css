@@ -1,0 +1,103 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-shadow: 4px 1px 10px lightgray;
+    
+}
+
+.header img{
+    width: 30px;
+}
+
+.left-header{
+    width: 20%;
+}
+
+.logo{
+    min-width: 126px;
+    height: 40px;
+    width: 56px;
+    vertical-align: center;
+     margin: 10px 13px;
+     cursor: pointer;
+
+
+}
+
+.middle-header{
+    width: 0;
+    flex: 1;
+    display: inline;
+}
+
+.search-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 10% 8px 10%;
+
+}
+
+.search-bar{
+    width: 70%;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    margin: 10px 0 2px 0;
+    border-radius: 26px;  
+    padding: 5px 0;
+    padding-left: 5px;
+    border-style: solid;
+    transform: translateX(79px);
+}
+
+.search-bar input{
+    font-size: 20px;
+}
+
+.search-bar::placeholder{
+    color: gray;
+    font-size: 13px;
+
+}
+
+
+
+.right-header{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+    margin-right: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.messenger-icon,  .notification-icon{
+    min-width: 50px;
+}
+
+.profile-picture{
+    min-width: 39px;
+    border-radius: 25px;
+    margin-left: 4px;
+}
+
+
+

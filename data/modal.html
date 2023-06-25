@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" href="modal.css">
+	<link rel="icon" type="image/png" href="Logo/je.png">
+	<title>Jeaven - Log in or sign up</title>
+
+</head>
+<body>
+
+	<div class="popup">
+		 	<div class="close-btn"> <a href="../Login form.html">&times;</a></div>
+		 	<div class="form">
+		 		<h1>Sign Up</h1>
+		 		<p>It's quick and easy.</p>
+		 	</div>
+		 	<form>
+		 	<div class="form-element">
+		 		<input type="text" id="first-name" class="name" placeholder="First Name" required>
+		 		<input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+		 		<input type="email" id="email" name="Email" placeholder="Mobile number or email">
+		 		<input type="password" id="password"name="password" placeholder="New password" required>
+
+		 		<label for="year" class="year" id="Year"value="year">Year</label>
+		 			<select name="year" value="Year" class="year">
+		 			<option value="1st Year">1st Year</option>
+		 			<option value="2nd Year">2nd Year</option>
+		 			<option value="3rd Year"> 3rd Year</option>
+		 			<option value="4th Year">4th Year</option>
+		 		</select>
+
+		 		<label for="course" class="course"value="course">Course </label>
+		 		<select name="course" class="course" id="course">
+		 			<option value="engineering">Engineering</option>
+		 			<option value="psychology">Psychology</option>
+		 			<option value="accountancy"> Accountancy</option>
+		 			<option value="comSci">Computer Science</option>
+		 			<option value="chemistry">Chemistry</option>
+		 		</select>
+
+
+		 		<div class="navigation-message">
+		 		<p >People who use our service may have uploaded your contact information to Jeaven. <span class="learn-more">Learn more.</span><p>
+		 			<br>
+				By clicking Sign Up, you agree to our<span class="learn-more"> Terms, Privacy Policy</span> and <span class="learn-more"> Cookies Policy</span>. You may receive SMS Notifications from us and can opt out any time.</p></div>
+
+				<button id="sign-up" class="sign-up">Sign Up</button>
+				<div class="btn-container">
+				</div>
+			 	</div>
+			 </form>
+		 </div>
+
+		 
+
+		 <div class="overlay">
+		 </div>
+
+		 <script type="text/javascript">
+			const btn1 = document.getElementById("sign-up");
+		btn1.addEventListener('click', () => {
+		  alert('"Sign-up Successfully! You can now connect with friends and family and discover what’s happening in the world. Thanks for joining us!"');
+		});
+		btn1.addEventListener('click', () => {
+		  alert('Click the "X" button to return the main page');
+		});
+
+
+	
+</script>
+</body>
+</html>

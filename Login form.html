@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="data/Logo/je.png">
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" href="form.css">
+	<title>Jeaven - Log in or sign up</title>
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<div class="logo">
+				<div class="logo-section">
+					<img class="jeaven-logo" src="data/Logo/Jeaven.logo.png">
+					<div class="text">
+						<p class="connect">Connect with friends and the world around you on Jeaven ツ</p>
+					</div>
+				</div>
+			</div>
+			<div class="form-section">
+				<form>
+					<div class="form">
+						<label for="email">
+							<input class="email" type="email" name="email" placeholder="Email or phone number" id="email" value="jeavenanda@gmail.com"required>
+						</label>
+						<label for="password">
+							<input id="password" class="password" type="password" name="password" placeholder="Password" value="*********" required>
+						</label>
+						<div class="log-in-button">
+							<a href="data/facebook.html">
+								<input type="button" name="Log In" id="log-in"class="log-in" >
+								<p class="log-in-text">Log In</p>
+							</a> 
+						</div>
+						<p id="forgotPassword" class="forgot-password">Forgot password?</p>
+						<hr>
+						<div class="create-new-account">
+							<a href="data/modal.html"> <input type="button" id="create" class="create" value="Create Account"></a>
+						</div>
+						<div  class="bottom-text"><strong>Create a Page</strong>   for a celebrity, brand or business</div>
+					</div>	
+				</form>	
+			</div>
+
+		 </div>
+    </div>
+
+    		 <script type="text/javascript">
+			const btn1 = document.getElementById("forgotPassword");
+		btn1.addEventListener('click', () => {
+		  alert('"Sorry, the website you are trying to access is not available at the moment. Please try again later."');
+		});
+
+	</script>
+</body>
+</html>
+
